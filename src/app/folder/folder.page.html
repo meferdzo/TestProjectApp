@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <img src="assets/testproject.png" class="image-responsive">
+    <ion-card-header>
+      <ion-card-subtitle>TestProject</ion-card-subtitle>
+      <ion-card-title>Test Lab</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Aplikacija je namenjena testiranju gumbov, tekstovnih polj in ostalih elementov, ki se pojavljajo pri mobilnih denarnicah.
+      <br><br>Kaj je TestProject?  <br><br>
+      TestProject is a free end-to-end test automation splatform for web, mobile, and API testing that’s supported by the #1 test automation community of over 70,000 companies and users!<br><br>
+      TestProject has a best in class Mobile Test Recorder that captures real time activity with zero latency for any Android or iOS application.
+    </ion-card-content>
+
+    <ion-item routerLink="/buttons" class="ion-activated" router-direction="root">
+      <ion-icon name="arrow-redo" slot="start"></ion-icon>
+      <ion-label>Nadaljuj</ion-label>
+    </ion-item>
+  </ion-card>
+</ion-content>
